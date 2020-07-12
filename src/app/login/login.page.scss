@@ -1,0 +1,22 @@
+ion-item{ 
+    --border-color: #FFDF02; 
+    --border-bottom: 5px !important;
+}
+
+.containers p {
+    text-align: center;
+}
+
+ion-segment {
+    --background: #fff;
+    border-radius: 0;
+    height: 50px;
+}
+
+ion-segment-button {
+    --color: #000;
+    --border-radius: 0;
+    --background-activated: #FFDF02;
+    --background-checked: #FFDF02;
+    --background-focused: #FFDF02;
+}
