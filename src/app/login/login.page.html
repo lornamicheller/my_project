@@ -1,40 +1,37 @@
-<ion-content>
+<ion-content forceOverscroll="false">
 
-  <div class="containers" *ngIf="!register">
-    <p>login</p>
-    <ion-item>
+  <img class="logo" src="assets/logo slash.png" />
 
-      <ion-icon slot="start" ios="person-circle-outline" md="person-circle-sharp"></ion-icon>
-      <ion-input type="text" placeholder="Correo Electrónico"></ion-input>
-    </ion-item>
+  <div class="containers">
+    <p>Iniciar Sesión</p>
 
-    <ion-item>
-      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-      <ion-input placeholder="Contraseña" type="password"></ion-input>
-    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="ion-no-padding icon-container">
+          <ion-icon class="icon" ios="person-circle-outline" md="person-circle-sharp"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-no-padding input-container">
+          <ion-input placeholder="Usuario o Email" type="email"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="ion-no-padding icon-container">
+          <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-no-padding input-container">
+          <ion-input placeholder="Contraseña" type="password"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button class="login-btn" expand="block">Iniciar Sesión</ion-button>
+
+
+    <ion-button class="register-btn" expand="block" (click)="goToRegister()">Regístrate</ion-button>
 
   </div>
-
-  <div *ngIf="register" class="containers">
-    <p>registro</p>
-    <ion-item>
-      <ion-icon slot="start" ios="person-circle-outline" md="person-circle-sharp"></ion-icon>
-      <ion-input type="text" placeholder="Correo Electrónico"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-      <ion-input placeholder="Contraseña" type="password"></ion-input>
-    </ion-item>
-
-  </div>
-
 </ion-content>
-<ion-segment>
-    <ion-segment-button (click)="changeRegister(false)">
-      <ion-label>Inicias Sesión</ion-label>
-    </ion-segment-button>
-    <ion-segment-button (click)="changeRegister(true)">
-      <ion-label>Regístrate</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+

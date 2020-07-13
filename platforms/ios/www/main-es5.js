@@ -230,6 +230,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return m.LoginPageModule;
         });
       }
+    }, {
+      path: 'register',
+      loadChildren: function loadChildren() {
+        return __webpack_require__.e(
+        /*! import() | register-register-module */
+        "register-register-module").then(__webpack_require__.bind(null,
+        /*! ./register/register.module */
+        "./src/app/register/register.module.ts")).then(function (m) {
+          return m.RegisterPageModule;
+        });
+      }
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -551,7 +562,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/micheller./Desktop/my_project/src/main.ts */
+    /*! /Users/lornarivera/Documents/GitHub/my_project/src/main.ts */
     "./src/main.ts");
     /***/
   }

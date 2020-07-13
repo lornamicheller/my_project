@@ -464,6 +464,10 @@ const routes = [
     {
         path: '',
         loadChildren: () => __webpack_require__.e(/*! import() | login-login-module */ "login-login-module").then(__webpack_require__.bind(null, /*! ./login/login.module */ "./src/app/login/login.module.ts")).then(m => m.LoginPageModule)
+    },
+    {
+        path: 'register',
+        loadChildren: () => __webpack_require__.e(/*! import() | register-register-module */ "register-register-module").then(__webpack_require__.bind(null, /*! ./register/register.module */ "./src/app/register/register.module.ts")).then(m => m.RegisterPageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -654,7 +658,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/micheller./Desktop/my_project/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/lornarivera/Documents/GitHub/my_project/src/main.ts */"./src/main.ts");
 
 
 /***/ })
